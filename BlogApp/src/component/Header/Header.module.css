@@ -1,0 +1,8 @@
+.header{
+    display: flex;
+    align-items: center;
+    /* gap: 20px; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px;
+}

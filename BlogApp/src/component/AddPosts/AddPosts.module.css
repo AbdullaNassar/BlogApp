@@ -1,0 +1,20 @@
+.form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #FDF2E1;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+}
+.form input{
+    height: 30px;
+    width: 170px;
+    padding:10px;
+}
+.fotm textarea{
+    height: 30px;
+    width: 300px;
+    padding: 10px;
+}

@@ -1,0 +1,15 @@
+.post{
+    padding: 10px;
+    height: 100px;
+    background: red;
+    width: 300px;
+    border: 1px black;
+    background: wheat;
+    border-radius: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.post p{
+    margin-top: 10px;
+    text-overflow: ellipsis;
+}
