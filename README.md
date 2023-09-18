@@ -16,6 +16,12 @@ the main functionality of the app includes:
 </ul>
 <br/>
 
+<h2>Live Demo</h2>
+
+https://github.com/AbdullaNassar/BlogApp/assets/113154901/c52f8d7c-bd80-4cc8-a6a1-25bdf836e752
+
+
+
 <h2>Installtion</h2>
 
 to install and run this project locally, you need to have Node.js and npm (Node Package Manager) installed on your machine.
