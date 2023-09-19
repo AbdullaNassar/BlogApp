@@ -1,8 +1,39 @@
-# React + Vite
+<h2>Overview</h2>
+This is a web application built using React.js and CSS modules. 
+the main functionality of the app includes:
+<ul>
+  <li>Adding new blogs to your blog list</li>
+  <li>Searching for blogs</li>
+  <li>Delete All blogst</li>
+</ul>
+<br/>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h2>Technologies Used</h2>
+<ul>
+  <li>React.js</li>
+  <li>CSS modules</li>
+  <li>Vite</li>
+</ul>
+<br/>
 
-Currently, two official plugins are available:
+<h2>Live Demo</h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://github.com/AbdullaNassar/BlogApp/assets/113154901/c52f8d7c-bd80-4cc8-a6a1-25bdf836e752
+
+
+
+<h2>Installtion</h2>
+
+to install and run this project locally, you need to have Node.js and npm (Node Package Manager) installed on your machine.
+follow these steps: 
+
+1-Clone the repo  => (git clone [repo-url]
+
+2-Navigate to the project directory => (cd BlogApp)
+
+3-Install the dependencies using npm  => (npm install)
+
+4-start the development server => (npm run dev)
+
+and then this application will be running at http://localhost:5173, you can open it from your browser.
+<br/>
