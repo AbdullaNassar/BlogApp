@@ -1,22 +1,17 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import classes from "./AddPosts.module.css";
-function AddPosts({addPost}){
-    const[postTitle, setPostTitle]=useState('');
-    const[postBody, setPostBody]=useState('');
-    function addPostHandler(e){
-        e.preventDefault();
-        if(!postTitle || !postBody)return ;
-        const newpost= {title: postTitle, body: postBody};
-        addPost(newpost);
-        // setPostTitle('');
-        // setPostBody('');
-    }
-
+import { PostContext } from "../PostContext";
+function AddPosts(){
+    
+    const{addPost,postTitle,setPostTitle,postBody,setPostBody}= useContext(PostContext);
     return(
-        <form className={classes.form} onSubmit={addPostHandler} >
-            <input value={postTitle} onChange={(e)=>setPostTitle(e.target.value)} 
+        <form className={classes.form} onSubmit={(e)=>{
+            e.preventDefault();
+            addPost();
+        }} >
+            <input value={postTitle} onChange={setPostTitle} 
             type="text" placeholder="Post title" />
-            <textarea value={postBody} onChange={(e)=>setPostBody(e.target.value)}
+            <textarea value={postBody} onChange={setPostBody}
              placeholder="Post body" />
             <button className="btn">Add Post</button>
         </form>

@@ -1,11 +1,11 @@
-import { useState } from "react";
-
-function SearchPost({changeQuery}){
-    const[query, setQuery]=useState('');
+import { useContext } from "react";
+import { PostContext } from "../PostContext";
+function SearchPost(){
+    const{changeQuery}=useContext(PostContext);
+    
     return(
         <div>
-            <input value={query} onChange={(e)=>{
-                setQuery(e.target.value)
+            <input onChange={(e)=>{
                 changeQuery(e.target.value);
             }} placeholder="Search posts..."/>
         </div>
