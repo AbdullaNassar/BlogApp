@@ -1,9 +1,9 @@
 import { useContext, useState } from "react";
 import classes from "./AddPosts.module.css";
-import { PostContext } from "../PostContext";
+import { usePosts } from "../PostContext";
 function AddPosts(){
     
-    const{addPost,postTitle,setPostTitle,postBody,setPostBody}= useContext(PostContext);
+    const{addPost,postTitle,setPostTitle,postBody,setPostBody}= usePosts();
     return(
         <form className={classes.form} onSubmit={(e)=>{
             e.preventDefault();

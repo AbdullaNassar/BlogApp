@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import Post from "./Post";
 import classes from "./Posts.module.css"
-import { PostContext } from "../PostContext";
+import { usePosts } from "../PostContext";
 function Posts(){
     // console.log('from posts')
-    const {posts}=useContext(PostContext);
+    const {posts}=usePosts();
     // console.log(posts);
     return(
         <div className={classes.posts}>

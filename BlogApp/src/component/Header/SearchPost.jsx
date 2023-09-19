@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { PostContext } from "../PostContext";
+import { usePosts } from "../PostContext";
 function SearchPost(){
-    const{changeQuery}=useContext(PostContext);
+    const{changeQuery}=usePosts();
     
     return(
         <div>

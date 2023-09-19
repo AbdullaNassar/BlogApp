@@ -2,11 +2,11 @@ import Logo from "./Logo";
 import Result from "./Result";
 import SearchPost from "./SearchPost";
 import classes from "./Header.module.css";
-import { PostContext } from "../PostContext";
+import { usePosts } from "../PostContext";
 import { useContext } from "react";
 function Header(){
     
-    const {clearPosts}=useContext(PostContext);
+    const {clearPosts}=usePosts();
     
     return(
         <div className={classes.header}>

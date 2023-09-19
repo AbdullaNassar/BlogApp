@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { PostContext } from "../PostContext";
+import { usePosts } from "../PostContext";
 function Result(){
-    const{postsLen}=useContext(PostContext);
+    const{postsLen}=usePosts();
     // console.log(postsLen);
     return(
         <div style={{fontWeight:"bold"}}>
